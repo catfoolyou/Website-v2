@@ -1,0 +1,10 @@
+.deps
+*.rc
+*.cfg
+*.exe
+*.desktop
+*.txt
+!CMakeLists.txt
+*.metainfo.xml
+tags
+TAGS

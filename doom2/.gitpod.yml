@@ -1,0 +1,11 @@
+tasks:
+  - init: |
+      brew install emscripten
+      brew install automake
+      brew install sdl2 sdl2_mixer sdl2_net
+      ./scripts/build.sh
+    command: cd src && python3 -m http.server
+
+ports:
+  - port: 8000
+    onOpen: open-browser
