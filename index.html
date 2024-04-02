@@ -1,63 +1,111 @@
+<!DOCTYPE html>
+<html>
+
 <head>
-  <title>Catfoolyou.github.io v2</title>
+<meta charset="utf-8">
+<title>Website v2</title>
+<style>
+body {
+  margin: 0 10%;
+  font-family: sans-serif;
+  }
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#randomImage {
+            max-width: 100%;
+            height: 400px; 
+        }
+
+</style>
 </head>
 
-<font size="4">  
-    My new and imporved website designed to be redeployed an unlimited amount of times.
-</font>  
+<body>
+
+<h1>Catfoolyou's Website v2</h1>
+<h3 style="text-align: center;">My new and improved site for all of my games, source and other github crap.</h3>
+
+<img alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Fcatfoolyou.github.io%2FWebsite-v2%2F&label=Website%20status%3A">
+<br>
+
+<p style="text-align: center;">It now has all of the games in one place, so that it can be redeployed without a pain in the ass if it gets blocked like the original site, go look around my repos on Github if you like.</p>
+<p style="text-align: center;">I was too lazy to make something decent so I slapped this together in less than a minute.</p>
+
 <br>
 <br>
 
-<font size="3">Source for proxies, games and some of my other stuff:</font>
-<br>
-<a href="https://github.com/catfoolyou?tab=repositories">[link]</a>
+<div style="text-align:center; font-size: 1em;">
+
+<a href="./games.html">Games</a>
 <br>
 <br>
 
-<font size="4">  
-    My Github repos and other crap I made 
-</font>  
-<br>
-<br>
-<font size="3">Github games</font>
-<br>
-<a href="./quake/index.html">Quake</a>
-<br>
-<a href="./q13k/index.html">Q13K</a>
-<br>
-<a href="./doom/index.html">Doom</a>
-<br>
-<a href="./doom2/index.html">Doom 2</a>
-<br>
-<a href="./retal/index.html">Retaliator</a>
-<br>
-<a href="./bbcube2/index.html">BananaBread</a>
-<br>
-<a href="./fnaw/index.html">Five Nights at Winston's</a>
-<br>
-<a href="./slope/index.html">Slope</a>
+<a href="./eagler.html">Eagler</a>
 <br>
 <br>
 
-<font size="3">Offline downloads for Eagler and FNAW are available here:</font>
-<br>
-<a href="https://github.com/catfoolyou/Block-Bypass">[link]</a>
+<a href="https://github.com/catfoolyou/Website-v2">Website source</a>
 <br>
 <br>
 
-<font size="3">Eaglercraft stuff</font>
+<a href="https://github.com/catfoolyou?tab=repositories">My repos</a>
 <br>
-<a href="./eagler/index.html">Eaglercraft 1.5.2</a>
 <br>
-<a href="./eaglerx/index.html">Eaglercraft 1.8.8</a>
+
 <br>
-<a href="https://github.com/catfoolyou/Eaglercraft-1.12">Eaglercraft 1.12 desktop runtime and server</a>
 <br>
-<a href="https://github.com/catfoolyou/EaglerX-Server">Eaglercraft 1.8.8 server</a>
+
+<a href="./legacy.html">Legacy site</a>
+
 <br>
-<a href="https://github.com/catfoolyou/Eagler-Server/">Eaglercraft 1.5.2 server</a>
 <br>
-<a href="https://github.com/catfoolyou/EaglercraftX-Desktop-Runtime">Eaglercraft 1.8.8 desktop runtime</a>
+
 <br>
-<a href="https://github.com/catfoolyou/Eaglercraft-Desktop-Runtime">Eaglercraft 1.5.2 desktop runtime</a>
 <br>
+
+</div>
+
+<img id="randomImage" src="" alt="Random Image">
+    <script>
+        function getRandomImage() {
+            const images = ['nuts.jpg', 'plane.jpg', 'test.png', 'image.webp']; 
+            const randomIndex = Math.floor(Math.random() * images.length);
+            return images[randomIndex];
+        }
+
+        function setRandomImage() {
+            const imgFolder = 'img/';
+            const imgElement = document.getElementById('randomImage');
+            const randomImage = getRandomImage();
+            imgElement.src = imgFolder + randomImage;
+        }
+
+        // Set random image on page load
+        setRandomImage();
+
+        // Change image every 24 hours
+        setInterval(setRandomImage, 24 * 60 * 60 * 1000);
+    </script>
+
+<br>
+<br>
+
+<br>
+<br>
+
+</body>
+
+</html>
