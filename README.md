@@ -1,4 +1,4 @@
-# GST-Website-v2
+# Website-v2
 
 My new little website (RIP catfoolyou.github.io)
 
