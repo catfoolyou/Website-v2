@@ -25,8 +25,11 @@
 						assetsURI: "assets.epk",
 						localesURI: "lang/",
 						worldsDB: "worlds",
-						logInvalidCerts: true,
-						crashOnUncaughtExceptions: true
+						servers: [
+							{ addr: "wss://play.zelz.net", name: "ZelzNet" },
+							{ addr: "wss://mc.arch.lol", name: "ArchMC" },
+							{ addr: "wss://beta.arch.lol", name: "§r §r §r §r §4§lArchMC Beta" }
+    						]
 					};
 					main();
 				}
