@@ -3,6 +3,16 @@
 <head>
 <title>Eaglercraft 1.6.4</title>
 <meta charset="UTF-8" />
+<!--rizz tags-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="This is real Minecraft 1.6.4 that you can play in any regular web browser. That includes school chromebooks, it works on all chromebooks. It supports both singleplayer and multiplayer with no extensions." />
+<meta name="keywords" content="minecraft, eaglercraft, singleplayer, applet, replit, browser, html5, javascript, chromebook, catfoolyou, minecraft, minecraft 1.6.4, eaglercraft 1.6.4, games, eagler" />
+<meta name="author" content="catfoolyou" />
+<meta property="og:title" content="Eaglercraft 1.6.4" />
+<meta property="og:locale" content="en-US" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Eaglercraft is real Minecraft 1.5.2 that you can play in any regular web browser. That includes school chromebooks, it works on all chromebooks. It supports both singleplayer and multiplayer with no extensions."
+	
 <script type="text/javascript" src="eagswebrtc.js"></script>
 <!--script type="text/javascript" src="music.js"></script-->
 <script type="text/javascript" src="classes.js"></script>
@@ -36,16 +46,17 @@ assetOverrides: {
 },
 servers: [
 	{ serverName: "Local Test Server", serverAddress: "ws://localhost:25565", hideAddress: false },
-    { serverName: "CathCraft", serverAddress: "wss://cathcraft.zelz.net", hideAddress: false },
+    // { serverName: "CathCraft", serverAddress: "wss://cathcraft.zelz.net", hideAddress: false }, may or may not happen. kloven said smth about getting hardware set up. 
     { serverName: "CathCraft (public beta)", serverAddress: "wss://cathcraft.cirsi.us", hideAddress: false },
     { serverName: "Quakegen", serverAddress: "wss://walrus-enjoyed-cattle.ngrok-free.app", hideAddress: false },
-	{ serverName: "Ayunboom", serverAddress: "wss://sigma.shhnowisnottheti.me", hideAddress: false }
+	// { serverName: "Ayunboom", serverAddress: "wss://sigma.shhnowisnottheti.me", hideAddress: false } doesn't work
    
 ],
 relays: [
 	{ addr: "wss://relay.deev.is/", name: "lax1dude relay #1", primary: relayId == 0 },
 	{ addr: "wss://relay.lax1dude.net/", name: "lax1dude relay #2", primary: relayId == 1 },
-	{ addr: "wss://relay.shhnowisnottheti.me/", name: "ayunami relay #1", primary: relayId == 2 }
+	{ addr: "wss://relay.shhnowisnottheti.me/", name: "ayunami relay #1", primary: relayId == 2 },
+	{ addr: "wss://eaglerrelay.glitch.me/", name: "hellscaped relay", primary: relayId == 3 } // this works in eagleropts? 
 ],
 mainMenu: { splashes: [
 "Darviglet!", "eaglerenophile!", "You Eagler!", "Yeeeeeee!", "yeee", "EEEEEEEEE!", "You Darvig!", "You Vigg!", ":>", "|>", "You Yumpster!", "No longer on Gitpod", "MiG Mad Marine", "Wild Weasel", "YGBSM", "Union Aerospace Corporation"
